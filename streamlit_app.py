@@ -1,16 +1,24 @@
 import streamlit as st 
 import pandas as pd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import numpy as np
 
 st.balloons()
 st.markdown("# jiwoo world")
 
+st.number_input('Pick a number',0,10)
+st.text_input('Email address')
+st.date_input('Travelling date')
+st.time_input('School time')
+st.text_area('Description')
+st.file_uploader('Upload a photo')
+st.color_picker('Choose your favorite color')
 
-rand=np.roanodrm.normal(1,2,size=20)
-fig,ax=plt.subplots()
-ax.hist(rand,bis=15)
-st.pyplot(fig)
+
+#rand=np.roanodrm.normal(1,2,size=20)
+#fig,ax=plt.subplots()
+#ax.hist(rand,bis=15)
+#st.pyplot(fig)
 
 
 st.write("We are so glad to see you here. ✨ " 
