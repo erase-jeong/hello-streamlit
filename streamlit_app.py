@@ -1,8 +1,17 @@
 import streamlit as st 
 import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
 
 st.balloons()
 st.markdown("# jiwoo world")
+
+
+rand=np.roanodrm.normal(1,2,size=20)
+fig,ax=plt.subplots()
+ax.hist(rand,bis=15)
+st.pyplot(fig)
+
 
 st.write("We are so glad to see you here. ✨ " 
          "This app is going to have a quick walkthrough with you on "
